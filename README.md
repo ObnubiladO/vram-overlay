@@ -1,0 +1,1 @@
+Press F8 to toggle visibility.

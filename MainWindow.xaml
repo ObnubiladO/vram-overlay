@@ -1,0 +1,25 @@
+﻿<Window x:Class="GpuMemoryOverlay.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False">
+    <!-- Remove the Border's background completely -->
+    <Border x:Name="OverlayBorder" 
+            Padding="10"
+            MouseLeftButtonDown="OverlayBorder_MouseLeftButtonDown"
+            MouseMove="OverlayBorder_MouseMove"
+            MouseLeftButtonUp="OverlayBorder_MouseLeftButtonUp"
+            MouseRightButtonUp="OverlayBorder_MouseRightButtonUp"
+            Cursor="Hand">
+        <TextBlock x:Name="MemoryText" 
+                   Foreground="White"
+                   FontFamily="Consolas"
+                   FontWeight="Bold"
+                   TextWrapping="Wrap"
+                   Text="Initializing..."/>
+    </Border>
+</Window>
